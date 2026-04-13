@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "stars.scss"
-    ],
-    "names": [],
-    "file": "stars.css"
-}
+{"version":3,"sources":["stars.scss","variables.scss","stars.css"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,YCFU;ACCZ;AFGE;EACE,aAAA;EACA,YAAA;AEDJ;AFIE;EACE,WAAA;EACA,kDCRsB;EDStB,4BAAA;EACA,2BAAA;EACA,iBAAA;AEFJ;AFKM;EACE,6DAAA;EACA,UAAA;AEHR;AFCM;EACE,6DAAA;EACA,UAAA;AECR;AFHM;EACE,6DAAA;EACA,UAAA;AEKR;AFPM;EACE,6DAAA;EACA,UAAA;AESR;AFLI;EACE,+DAAA;EACA,UAAA;AEON;AFJI;EACE,iBAAA;EACA,+BAAA;EACA,gBAAA;EACA,eAAA;EACA,iBAAA;EACA,kBAAA;AEMN","file":"stars.css"}

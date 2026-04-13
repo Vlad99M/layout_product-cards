@@ -1,3 +1,42 @@
-$star-size: 16px;
-$background-image-active: url('../images/star-active.svg');
-$background-image-inactive: url('../images/star.svg');
+@import 'variables';
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $star-size;
+
+  &__wrap {
+    display: flex;
+    height: 16px;
+  }
+
+  &__star {
+    width: 16px;
+    background-image: $background-image-active;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 4px;
+
+    @for $row from 1 through 4 {
+      &--#{$row} {
+        background: url('../images/star-active.svg') no-repeat center;
+        opacity: 1;
+      }
+    }
+
+    &--5 {
+      background: url('../images/star-inactive.svg') no-repeat center;
+      opacity: 1;
+    }
+
+    &__reviews {
+      margin-left: 17px;
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 14px;
+      letter-spacing: 0%;
+    }
+  }
+}
