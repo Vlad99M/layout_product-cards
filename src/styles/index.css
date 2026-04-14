@@ -88,7 +88,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 16px;
+  margin-right: 4px;
 }
 
 .stars__wrap {
@@ -96,48 +96,14 @@
   height: 16px;
 }
 
-.stars--1 {
+.stars__star {
   width: 16px;
-  background-image: url('../images/star-active.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 4px;
-  opacity: 1;
+  height: 16px;
+  background: url(../images/star.svg) no-repeat center;
 }
 
-.stars--2 {
-  width: 16px;
-  background-image: url('../images/star-active.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 4px;
-  opacity: 1;
-}
-
-.stars--3 {
-  width: 16px;
-  background-image: url('../images/star-active.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 4px;
-  opacity: 1;
-}
-
-.stars--4 {
-  width: 16px;
-  background-image: url('../images/star-active.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 4px;
-  opacity: 1;
-}
-
-.stars--5 {
-  width: 16px;
-  background-image: url('../images/star.svg');
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-position: center;
+.stars__star--active {
+  background: url(../images/star-active.svg) no-repeat center;
 }
 
 .stars__reviews {
