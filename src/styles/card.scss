@@ -1,8 +1,11 @@
 @import 'variables';
 
 .card {
+  display: flex;
+  flex-direction: column;
   width: $card-width;
   box-sizing: $box-sizing;
+  overflow: hidden;
   background-color: #fff;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
