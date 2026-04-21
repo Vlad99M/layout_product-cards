@@ -4,29 +4,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 4px;
+  width: $rating-width;
+  height: $rating-height;
+  margin: 0 auto 24px;
 
   &__wrap {
     display: flex;
-    height: $star-size;
+    align-items: center;
+    width: $star-wrap-width;
   }
 
   &__star {
+    cursor: pointer;
     width: $star-size;
     height: $star-size;
-    background: url(../images/star.svg) no-repeat center;
+    background: url(../images/star.svg) no-repeat;
+    background-position: 50%;
+    background-size: 16px 16px;
 
-    &--active {
-      background: url(../images/star-active.svg) no-repeat center;
+    &:nth-child(-n + 4) {
+      background-image: url(../images/star-active.svg);
+    }
+    &:not(:last-child) {
+      margin-right: 4px;
     }
   }
 
   &__reviews {
-    margin-left: 17px;
+    text-align: right;
     font-family: $font-family;
+    color: $color-reviews;
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
-    letter-spacing: 0%;
+    width: 53px;
   }
 }

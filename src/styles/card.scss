@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   width: $card-width;
+  height: $card-height;
   box-sizing: $box-sizing;
-  overflow: hidden;
   background-color: #fff;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
@@ -15,18 +15,23 @@
     display: block;
     width: 160px;
     height: 134px;
-    background-image: url(../images/imac.jpeg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     margin: 0 auto 40px;
   }
 
-  &__device-name {
+  &__imac-photo {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &__device-title {
     font-family: $font-family;
+    color: $color-reviews;
     display: block;
     font-weight: 500;
     margin: 0;
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0%;
@@ -40,22 +45,21 @@
     line-height: 14px;
     letter-spacing: 0;
     color: $color-text;
-    margin-top: 4px;
     margin-bottom: 16px;
   }
 
   &__price {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-family: $font-family;
-    line-height: 18px;
-    padding-top: 24px;
+    margin-bottom: 16px;
   }
 
   &__price-label {
     font-weight: 400;
     font-size: 12px;
     color: #616070;
-    padding-right: 85px;
   }
 
   &__price-value {
@@ -69,15 +73,14 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0%;
     text-transform: uppercase;
     background-color: #00acdc;
-    width: 166px;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     color: #fff;
-    margin-top: 16px;
-    border: none;
+    cursor: pointer;
+    border: 1px solid #0000;
 
     &:hover {
       background-color: #fff;
